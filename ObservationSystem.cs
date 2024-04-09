@@ -61,21 +61,25 @@ namespace TextAdventure
                 public EventTarget()
                 {
                     // Initialize event target
+                    Console.WriteLine("Event target initialized.");
                 }
 
                 public void AddEventListener(string eventName, object listener)
                 {
                     // Add event listener
+                    Console.WriteLine("Event listener added: " + eventName);
                 }
 
                 public void RemoveEventListener(string eventName, object listener)
                 {
                     // Remove event listener
+                    Console.WriteLine("Event listener removed: " + eventName);
                 }
 
                 public void DispatchEvent(string eventName, object data)
                 {
                     // Dispatch event
+                    Console.WriteLine("Event dispatched: " + eventName);
                 }
             }
         }
