@@ -11,17 +11,17 @@ namespace TextAdventure
     /// </summary>
     public class ObservationSystem
     {
+        public object Encyclopedia { get; private set; } // Object to store observations
         private List<object> plugins; // List to store plugins
+        public ObservationSystem observation; // Observation object
 
         /// <summary>
         /// Initializes a new instance of the ObservationSystem class.
         /// </summary>
-        public ObservationSystem()
+        public ObservationSystem(List<object> plugins)
         {
             plugins = new List<object>(); // Initialize the list of plugins
         }
-
-        public object Encyclopedia { get; private set; }
 
         /// <summary>
         /// Records an observation.
