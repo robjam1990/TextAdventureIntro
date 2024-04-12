@@ -11,16 +11,18 @@ namespace TextAdventure
     /// </summary>
     public class ObservationSystem
     {
-        public object Encyclopedia { get; private set; } // Object to store observations
-        private List<object> plugins; // List to store plugins
+        public object? Encyclopedia { get; private set; } // Object to store observations
+        private List<object?> plugins; // List to store plugins
         public ObservationSystem observation; // Observation object
 
         /// <summary>
         /// Initializes a new instance of the ObservationSystem class.
         /// </summary>
-        public ObservationSystem(List<object> plugins)
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
+        public ObservationSystem(List<object?> plugins)
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         {
-            plugins = new List<object>(); // Initialize the list of plugins
+            plugins = new List<object?>(); // Initialize the list of plugins
         }
 
         /// <summary>
@@ -32,9 +34,9 @@ namespace TextAdventure
         public class Observation
         {
             private static EventTarget eventEmitter = new EventTarget();
-            private static Dictionary<string, Dictionary<string, object>> encyclopedia = new Dictionary<string, Dictionary<string, object>>();
+            private static Dictionary<string, Dictionary<string, object?>> encyclopedia = new Dictionary<string, Dictionary<string, object?>>();
 
-            public Dictionary<string, object>? Encyclopedia { get; private set; }
+            public Dictionary<string, object?>? Encyclopedia { get; private set; }
 
             /// <summary>
             /// Records an observation.
@@ -46,7 +48,7 @@ namespace TextAdventure
             {
                 // Record the observation
                 // "Encyclopedia" is an existing object where observations are stored
-                if (Encyclopedia is Dictionary<string, object> encyclopedia)
+                if (Encyclopedia is Dictionary<string, object?> encyclopedia)
                 {
                     encyclopedia[observationName] = properties;
                 }

@@ -18,7 +18,7 @@ namespace TextAdventure
             }
 
             // Record the object with its properties
-            Record(objectName, propertiesConfig);
+            Record(objectName, propertiesConfig!);
         }
 
         // Logic to record the object with its properties

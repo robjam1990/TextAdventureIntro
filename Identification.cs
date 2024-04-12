@@ -66,7 +66,7 @@ namespace TextAdventure
         public static void TriggerPlugins(string eventName, object data)
         {
             // Trigger plugins
-            foreach (var plugin in plugin)
+            foreach (var plugin in plugin!)
             {
                 try
                 {
