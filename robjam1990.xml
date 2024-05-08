@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <button onclick="category()">Click node to edit category</button>
+  <button onclick="pattern()">Click node to edit pattern</button>
+  <button onclick="that()">Click node to edit that</button>
+  <button onclick="template()">Click node to edit template</button>
+  <button onclick="think()">Click node to edit think</button>
+  <button onclick="set()">Click node to edit set</button>
+  <button onclick="get()">Click node to edit get</button>
+  <button onclick="var()">Click node to edit variable</button>
+  <button onclick="li()">Click node to edit line</button>
+<config>
+    <!-- Use environment variables for flexible library locations -->
+    <!-- Example: Set MONO_LIB_DIR environment variable for library paths -->
+    
+    <!-- Cygwin compatibility on non-Windows platforms -->
+    <dllmap dll="i:cygwin1.dll" target="libc.dylib" os="!windows">
+        <!-- Cygwin compatibility on non-Windows platforms -->
+    </dllmap>
+
+    <!-- Map libc library on non-Windows platforms to libc.dylib -->
+    <dllmap dll="libc" target="libc.dylib" os="!windows">
+        <!-- libc library on non-Windows platforms -->
+    </dllmap>
+
+    <!-- Map intl library on non-Windows platforms to libintl.dylib -->
+    <dllmap dll="intl" target="libintl.dylib" os="!windows"/>
+    <dllmap dll="intl" name="bind_textdomain_codeset" target="libc.dylib" os="solaris"/>
+    <dllmap dll="libintl" name="bind_textdomain_codeset" target="libc.dylib" os="solaris"/>
+    <dllmap dll="libintl" target="libintl.dylib" os="!windows"/>
+
+    <!-- Map libxslt library on non-Windows platforms to libxslt.dylib -->
+    <dllmap dll="i:libxslt.dll" target="libxslt.dylib" os="!windows">
+        <!-- libxslt library on non-Windows platforms -->
+    </dllmap>
+
+    <!-- Map odbc32.dll library on non-Windows platforms to libodbc.dylib -->
+    <dllmap dll="i:odbc32.dll" target="libodbc.dylib" os="!windows">
+        <!-- odbc32.dll library on non-Windows platforms -->
+    </dllmap>
+
+    <!-- Map odbc32.dll library on macOS to libiodbc.dylib -->
+    <dllmap dll="i:odbc32.dll" target="libiodbc.dylib" os="osx">
+        <!-- odbc32.dll library on macOS -->
+    </dllmap>
+
+    <!-- Map oci library on non-Windows platforms to libclntsh.dylib -->
+    <dllmap dll="oci" target="libclntsh.dylib" os="!windows">
+        <!-- oci library on non-Windows platforms -->
+    </dllmap>
+
+    <!-- Map kernel32.dll functions to internal functions -->
+    <dllmap dll="i:kernel32.dll">
+        <dllentry dll="__Internal" name="CopyMemory" target="mono_win32_compat_CopyMemory"/>
+        <dllentry dll="__Internal" name="FillMemory" target="mono_win32_compat_FillMemory"/>
+        <dllentry dll="__Internal" name="MoveMemory" target="mono_win32_compat_MoveMemory"/>
+        <dllentry dll="__Internal" name="ZeroMemory" target="mono_win32_compat_ZeroMemory"/>
+    </dllmap>
+
+    <!-- Map gdiplus.dll functions to libgdiplus.dylib -->
+    <dllmap dll="gdiplus" target="/Users/bokken/build/output/Unity-Technologies/mono/external/buildscripts/add_to_build_results/monodistribution/lib/libgdiplus.dylib" os="!windows"/>
+    <dllmap dll="gdiplus.dll" target="/Users/bokken/build/output/Unity-Technologies/mono/external/buildscripts/add_to_build_results/monodistribution/lib/libgdiplus.dylib" os="!windows"/>
+    <dllmap dll="gdi32" target="/Users/bokken/build/output/Unity-Technologies/mono/external/buildscripts/add_to_build_results/monodistribution/lib/libgdiplus.dylib" os="!windows"/>
+    <dllmap dll="gdi32.dll" target="/Users/bokken/build/output/Unity-Technologies/mono/external/buildscripts/add_to_build_results/monodistribution/lib/libgdiplus.dylib" os="!windows"/>
+
+    <!-- Use environment variables or command-line arguments to specify library locations -->
+    <!-- This makes the config more flexible and easier to maintain -->
+    <!-- Ensure that the data used in calculations is valid, complete, and consistent -->
+    <!-- This will help to avoid errors and improve accuracy -->
+
+    <!-- Use multi-threading or parallelization for independent calculations -->
+    <!-- Improves performance on multi-core systems -->
+
+    <!-- Consider using a faster programming language or library for calculations -->
+    <!-- For example, C or C++ can be faster than higher-level languages like Python or Ruby -->
+
+    <!-- Use caching or memoization for frequently performed calculations -->
+    <!-- Improves the speed of future calculations -->
+
+    <!-- Use efficient algorithms or data structures (e.g., hash tables, binary search trees) -->
+    <!-- Improves the speed of searching and sorting operations -->
+
+    <!-- Review the code for redundant or unnecessary calculations -->
+    <!-- Remove them to improve response speed -->
+
+</config>
+
+<browsers>
+  <!-- Using a reputable third-party library for browser detection -->
+  <browser id="Default">
+    <identification>
+      <!-- Using a third-party library's user agent matching -->
+      <userAgent match="." />
+    </identification>
+  </browser>
+
+  <!-- Configuring specific browsers based on third-party detection -->
+  <browser id="IE6to11" parentID="Default">
+    <identification>
+      <!-- Using Browscap or WURFL for more comprehensive browser identification -->
+      <thirdPartyDetection library="Browscap" />
+    </identification>
+    <capabilities>
+      <!-- Adding capabilities based on third-party detection -->
+      <capability name="javascript" value="true" />
+      <capability name="cssSupportsQuery" value="true" />
+      <!-- Add more capabilities as needed for HTML, CSS, and JavaScript support -->
+    </capabilities>
+  </browser>
+
+  <browser id="Edge" parentID="Default">
+    <identification>
+      <!-- Using Browscap or WURFL for more comprehensive browser identification -->
+      <thirdPartyDetection library="Browscap" />
+    </identification>
+    <capabilities>
+      <!-- Adding capabilities based on third-party detection -->
+      <capability name="javascript" value="true" />
+      <capability name="cssSupportsQuery" value="true" />
+      <!-- Add more capabilities as needed for HTML, CSS, and JavaScript support -->
+    </capabilities>
+  </browser>
+
+  <browser id="Firefox" parentID="Default">
+    <identification>
+      <!-- Using Browscap or WURFL for more comprehensive browser identification -->
+      <thirdPartyDetection library="WURFL" />
+    </identification>
+    <capabilities>
+      <!-- Adding capabilities based on third-party detection -->
+      <capability name="javascript" value="true" />
+      <capability name="cssSupportsQuery" value="true" />
+      <!-- Add more capabilities as needed for HTML, CSS, and JavaScript support -->
+    </capabilities>
+  </browser>
+
+  <browser id="Chrome" parentID="Default">
+    <identification>
+      <!-- Using Browscap or WURFL for more comprehensive browser identification -->
+      <thirdPartyDetection library="Browscap" />
+    </identification>
+    <capabilities>
+      <!-- Adding capabilities based on third-party detection -->
+      <capability name="javascript" value="true" />
+      <capability name="cssSupportsQuery" value="true" />
+      <!-- Add more capabilities as needed for HTML, CSS, and JavaScript support -->
+    </capabilities>
+  </browser>
+
+  <!-- Add more browser definitions for other browsers as needed -->
+
+  <!-- Caching the results of browser detection for better performance -->
+  <cache duration="3600" />
+
+  <!-- Using feature detection or capability testing -->
+  <featureDetection enabled="true" />
+
+  <!-- Optimizing browser detection code for performance -->
+  <performanceOptimization>
+    <minimizeRegex usage="true" />
+    <multiThreading enabled="true" />
+  </performanceOptimization>
+
+  <!-- Regularly reviewing and updating browser definitions -->
+  <updateFrequency interval="30" unit="days" />
+</browsers>
+
+<aiml version="2.0">
+  <!-- Define reusable variables -->
+  <set name="exchangePattern">XEXCHANGE * XHUMAN * XBOT *</set>
+
+  <!-- Category for clearing dialog history -->
+  <category>
+    <pattern>CLEAR DIALOG HISTORY</pattern>
+    <template>
+      Cleared.
+      <think>
+        <!-- Clear all history-related variables -->
+        <foreach item="__item">
+          <set name="__item"/>
+        </foreach>
+      </think>
+    </template>
+  </category>
+
+  <!-- Category for badly formatted dialog exchanges -->
+  <category>
+    <pattern><exchangePattern></pattern>
+    <template>
+      Badly formatted dialog exchange: <star/>
+    </template>
+  </category>
+
+  <!-- Category for handling dialog exchanges -->
+  <category>
+    <pattern><exchangePattern></pattern>
+    <template>
+      <think>
+        <set name="request"><star index="2"/></set>
+        <set name="response"><star index="3"/></set>
+      </think>
+      <cond name="request">
+        <li value="unknown"/>
+        <li>
+          <get name="name"/>: <get name="request"/>
+          <bot name="name"/>: <get name="response"/>
+        </li>
+      </cond>
+    </template>
+  </category>
+
+  <!-- Category for handling dialog history -->
+  <category>
+    <pattern>DIALOG HISTORY</pattern>
+    <template>
+      <!-- Generate dynamic <srai> tags using a loop -->
+      <think>
+        <foreach item="__index" index="i" from="31" to="1" step="-1">
+          <srai>XEXCHANGE request<i/> XHUMAN  <request index="<get name="__index"/>"/> XBOT <response index="<get name="__index"/>"/></srai>
+        </foreach>
+      </think>
+    </template>
+  </category>
+
+  <!-- Category for testing request indices -->
+  <category>
+    <pattern>TEST *</pattern>
+    <template>
+      request 1 = <request/>.
+      request 2 = <request index="2"/>.
+      request 3 = <request index="3"/>.
+    </template>
+  </category>
+
+  <!-- Default category for unmatched patterns -->
+  <category>
+    <pattern>*</pattern>
+    <template>
+      I'm sorry, I didn't understand that. Can you please rephrase your question?
+    </template>
+  </category>
+    <!-- Validate and sanitize input before making the API call -->
+    <category>
+        <pattern>Make API call for *</pattern>
+        <template>
+            <think>
+                <!-- Additional validation or sanitization of input -->
+                <set var="cleaned_input"><star/></set>
+                
+                <!-- Check if cleaned input meets necessary requirements -->
+                <cond>
+                    <li value="valid">
+                        <!-- Call the API with the sanitized input -->
+                        <set var="common_elements">
+                            <method>POST</method>
+                            <query name="robjam1990"><secret>Observer</secret></query>
+                        </set>
+
+                        <callapi response_code_var="response_code">
+                            <url>https://robjam1990.*.com/</url>
+                            <url>https://robjam1990.ca/</url>
+                            <url>https://robjam1990.io/</url>
+                            <star />
+                            <header name="Think"></header>
+                            <get var="common_elements"/>
+                        </callapi>
+
+                        <set var="content">
+                            <jsonpath>
+                                <path>$.</path>
+                                <get var="response"/>
+                            </jsonpath>
+                        </set>
+                    </li>
+                    <li>Invalid input. Please provide valid data.</li>
+                </cond>
+            </think>
+        </template>
+    </category>
+
+    <!-- Process API Response -->
+    <category>
+        <pattern>Process API response</pattern>
+        <template>
+            <think>
+                <!-- Process the API response and set variables -->
+                <set var="response_code">
+                    <jsonpath>
+                        <path>$.[0].response_code</path>
+                        <get var="response"/>
+                    </jsonpath>
+                </set>
+
+                <!-- Additional conds for different response codes -->
+                <cond var="response_code">
+                    <li value="200"><get var="content"/></li>
+                    <li value="404">The requested resource was not found.</li>
+                    <li value="500">Internal Server Error. Please try again later.</li>
+                    <li>Unknown Error</li>
+                </cond>
+            </think>
+        </template>
+    </category>
+</aiml>
+
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!-- Project config -->
+        <build>
+            <!-- Define different build configurations -->
+            <configurations>
+                <configuration type="Debug" platform="Win32">
+                    <!-- Debug/Win32 specific properties -->
+                    <useDebugLibraries>true</useDebugLibraries>
+                    <platformToolset>v142</platformToolset>
+                    <characterSet>Unicode</characterSet>
+                    <!-- Additional properties here -->
+                </configuration>
+                <configuration type="Release" platform="Win32">
+                    <!-- Release/Win32 specific properties -->
+                    <useDebugLibraries>false</useDebugLibraries>
+                    <platformToolset>v142</platformToolset>
+                    <wholeProgramOptimization>true</wholeProgramOptimization>
+                    <characterSet>Unicode</characterSet>
+                    <!-- Additional properties here -->
+                </configuration>
+                <configuration type="Debug" platform="x64">
+                    <!-- Debug/x64 specific properties -->
+                    <useDebugLibraries>true</useDebugLibraries>
+                    <platformToolset>v142</platformToolset>
+                    <characterSet>Unicode</characterSet>
+                    <!-- Additional properties here -->
+                </configuration>
+                <configuration type="Release" platform="x64">
+                    <!-- Release/x64 specific properties -->
+                    <useDebugLibraries>false</useDebugLibraries>
+                    <platformToolset>v142</platformToolset>
+                    <wholeProgramOptimization>true</wholeProgramOptimization>
+                    <characterSet>Unicode</characterSet>
+                    <!-- Additional properties here -->
+                </configuration>
+            </configurations>
+        </build>
+
+  <!-- Project Properties -->
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>robjam1990, {8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}, {A76D0686-5E74-4B6F-A179-D99792D734E8}, {BE96E2D1-25EA-47D6-A563-E6C3FE9F8CD6}</ProjectGuid>
+    <RootNamespace>robjam1990.ca</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <VCProjectVersion>0.4.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+
+  <!-- Import Default Props -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+
+  <!-- Project-Level Property Groups -->
+  <PropertyGroup cond="'$(config)|$(Platform)'=='Debug|Win32'" Label="config">
+    <configType>app</configType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <!-- Additional Debug|Win32 specific properties here -->
+  </PropertyGroup>
+  <PropertyGroup cond="'$(config)|$(Platform)'=='Release|Win32'" Label="config">
+    <configType>app</configType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <!-- Additional Release|Win32 specific properties here -->
+  </PropertyGroup>
+  <PropertyGroup cond="'$(config)|$(Platform)'=='Debug|x64'" Label="config">
+    <configType>app</configType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <!-- Additional Debug|x64 specific properties here -->
+  </PropertyGroup>
+  <PropertyGroup cond="'$(config)|$(Platform)'=='Release|x64'" Label="config">
+    <configType>app</configType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <!-- Additional Release|x64 specific properties here -->
+  </PropertyGroup>
+
+  <!-- Import Project Props -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+
+  <!-- Import Groups -->
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" cond="'$(config)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" cond="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" cond="'$(config)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" cond="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" cond="'$(config)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" cond="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" cond="'$(config)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" cond="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+
+  <!-- User Macros -->
+  <PropertyGroup Label="UserMacros" />
+
+  <!-- Item Definition Groups -->
+  <ItemDefinitionGroup cond="'$(config)|$(Platform)'=='Debug|Win32'">
+    <PropertyGroup>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <!-- Additional Debug|Win32 specific properties here -->
+    </PropertyGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup cond="'$(config)|$(Platform)'=='Release|Win32'">
+    <PropertyGroup>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <!-- Additional Release|Win32 specific properties here -->
+    </PropertyGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup cond="'$(config)|$(Platform)'=='Debug|x64'">
+    <PropertyGroup>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <!-- Additional Debug|x64 specific properties here -->
+    </PropertyGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup cond="'$(config)|$(Platform)'=='Release|x64'">
+    <PropertyGroup>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <!-- Additional Release|x64 specific properties here -->
+    </PropertyGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+
+  <!-- Import Project Targets -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+
+</Project>

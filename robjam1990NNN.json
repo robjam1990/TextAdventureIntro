@@ -1,0 +1,1039 @@
+{
+    "head": {
+        "callFrame": {
+            "functionName": "(root)",
+            "scriptId": "0",
+            "url": "",
+            "lineNumber": -1,
+            "columnNumber": -1
+        },
+        "selfSize": 0,
+        "id": 1,
+        "children": [
+            {
+                "callFrame": {
+                    "functionName": "",
+                    "scriptId": "378",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 0
+                },
+                "selfSize": 16416,
+                "id": 9,
+                "children": []
+            },
+            {
+                "callFrame": {
+                    "functionName": "",
+                    "scriptId": "385",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 0
+                },
+                "selfSize": 0,
+                "id": 10,
+                "children": [
+                    {
+                        "callFrame": {
+                            "functionName": "main",
+                            "scriptId": "385",
+                            "url": "",
+                            "lineNumber": 53,
+                            "columnNumber": 13
+                        },
+                        "selfSize": 0,
+                        "id": 11,
+                        "children": [
+                            {
+                                "callFrame": {
+                                    "functionName": "initializeCharacters",
+                                    "scriptId": "385",
+                                    "url": "",
+                                    "lineNumber": 66,
+                                    "columnNumber": 29
+                                },
+                                "selfSize": 0,
+                                "id": 12,
+                                "children": [
+                                    {
+                                        "callFrame": {
+                                            "functionName": "forEach",
+                                            "scriptId": "0",
+                                            "url": "",
+                                            "lineNumber": -1,
+                                            "columnNumber": -1
+                                        },
+                                        "selfSize": 0,
+                                        "id": 13,
+                                        "children": [
+                                            {
+                                                "callFrame": {
+                                                    "functionName": "",
+                                                    "scriptId": "385",
+                                                    "url": "",
+                                                    "lineNumber": 150,
+                                                    "columnNumber": 23
+                                                },
+                                                "selfSize": 0,
+                                                "id": 14,
+                                                "children": [
+                                                    {
+                                                        "callFrame": {
+                                                            "functionName": "addItem",
+                                                            "scriptId": "385",
+                                                            "url": "",
+                                                            "lineNumber": 20,
+                                                            "columnNumber": 11
+                                                        },
+                                                        "selfSize": 16512,
+                                                        "id": 15,
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "callFrame": {
+                    "functionName": "",
+                    "scriptId": "465",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 0
+                },
+                "selfSize": 16408,
+                "id": 24,
+                "children": []
+            },
+            {
+                "callFrame": {
+                    "functionName": "",
+                    "scriptId": "523",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 0
+                },
+                "selfSize": 0,
+                "id": 31,
+                "children": [
+                    {
+                        "callFrame": {
+                            "functionName": "",
+                            "scriptId": "523",
+                            "url": "",
+                            "lineNumber": 0,
+                            "columnNumber": 10
+                        },
+                        "selfSize": 0,
+                        "id": 32,
+                        "children": [
+                            {
+                                "callFrame": {
+                                    "functionName": "",
+                                    "scriptId": "523",
+                                    "url": "",
+                                    "lineNumber": 0,
+                                    "columnNumber": 270
+                                },
+                                "selfSize": 0,
+                                "id": 33,
+                                "children": [
+                                    {
+                                        "callFrame": {
+                                            "functionName": "",
+                                            "scriptId": "523",
+                                            "url": "",
+                                            "lineNumber": 0,
+                                            "columnNumber": 277
+                                        },
+                                        "selfSize": 32824,
+                                        "id": 34,
+                                        "children": [
+                                            {
+                                                "callFrame": {
+                                                    "functionName": "",
+                                                    "scriptId": "523",
+                                                    "url": "",
+                                                    "lineNumber": 0,
+                                                    "columnNumber": 532
+                                                },
+                                                "selfSize": 16400,
+                                                "id": 35,
+                                                "children": []
+                                            },
+                                            {
+                                                "callFrame": {
+                                                    "functionName": "",
+                                                    "scriptId": "523",
+                                                    "url": "",
+                                                    "lineNumber": 0,
+                                                    "columnNumber": 36529
+                                                },
+                                                "selfSize": 0,
+                                                "id": 39,
+                                                "children": [
+                                                    {
+                                                        "callFrame": {
+                                                            "functionName": "init",
+                                                            "scriptId": "523",
+                                                            "url": "",
+                                                            "lineNumber": 0,
+                                                            "columnNumber": 13194
+                                                        },
+                                                        "selfSize": 16400,
+                                                        "id": 40,
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "callFrame": {
+                    "functionName": "",
+                    "scriptId": "557",
+                    "url": "",
+                    "lineNumber": 0,
+                    "columnNumber": 0
+                },
+                "selfSize": 0,
+                "id": 41,
+                "children": [
+                    {
+                        "callFrame": {
+                            "functionName": "",
+                            "scriptId": "557",
+                            "url": "",
+                            "lineNumber": 1,
+                            "columnNumber": 10
+                        },
+                        "selfSize": 16400,
+                        "id": 42,
+                        "children": [
+                            {
+                                "callFrame": {
+                                    "functionName": "",
+                                    "scriptId": "557",
+                                    "url": "",
+                                    "lineNumber": 1,
+                                    "columnNumber": 296
+                                },
+                                "selfSize": 32880,
+                                "id": 43,
+                                "children": [
+                                    {
+                                        "callFrame": {
+                                            "functionName": "",
+                                            "scriptId": "557",
+                                            "url": "",
+                                            "lineNumber": 2,
+                                            "columnNumber": 4738
+                                        },
+                                        "selfSize": 0,
+                                        "id": 44,
+                                        "children": [
+                                            {
+                                                "callFrame": {
+                                                    "functionName": "hb",
+                                                    "scriptId": "557",
+                                                    "url": "",
+                                                    "lineNumber": 2,
+                                                    "columnNumber": 8510
+                                                },
+                                                "selfSize": 16400,
+                                                "id": 45,
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "callFrame": {
+                                            "functionName": "",
+                                            "scriptId": "557",
+                                            "url": "",
+                                            "lineNumber": 10,
+                                            "columnNumber": 6748
+                                        },
+                                        "selfSize": 16432,
+                                        "id": 52,
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "callFrame": {
+                    "functionName": "(V8 API)",
+                    "scriptId": "0",
+                    "url": "",
+                    "lineNumber": -1,
+                    "columnNumber": -1
+                },
+                "selfSize": 10779480,
+                "id": 3,
+                "children": []
+            },
+            {
+                "callFrame": {
+                    "functionName": "(PARSER)",
+                    "scriptId": "0",
+                    "url": "",
+                    "lineNumber": -1,
+                    "columnNumber": -1
+                },
+                "selfSize": 65680,
+                "id": 7,
+                "children": []
+            },
+            {
+                "callFrame": {
+                    "functionName": "(BYTECODE_COMPILER)",
+                    "scriptId": "0",
+                    "url": "",
+                    "lineNumber": -1,
+                    "columnNumber": -1
+                },
+                "selfSize": 98432,
+                "id": 2,
+                "children": []
+            }
+        ]
+    },
+    "samples": [
+        {
+            "size": 18568,
+            "nodeId": 3,
+            "ordinal": 335
+        },
+        {
+            "size": 16608,
+            "nodeId": 3,
+            "ordinal": 333
+        },
+        {
+            "size": 16500,
+            "nodeId": 3,
+            "ordinal": 332
+        },
+        {
+            "size": 17584,
+            "nodeId": 3,
+            "ordinal": 331
+        },
+        {
+            "size": 25832,
+            "nodeId": 3,
+            "ordinal": 328
+        },
+        {
+            "size": 28664,
+            "nodeId": 3,
+            "ordinal": 324
+        },
+        {
+            "size": 1134452,
+            "nodeId": 3,
+            "ordinal": 318
+        },
+        {
+            "size": 24408,
+            "nodeId": 3,
+            "ordinal": 317
+        },
+        {
+            "size": 1134452,
+            "nodeId": 3,
+            "ordinal": 316
+        },
+        {
+            "size": 1134452,
+            "nodeId": 3,
+            "ordinal": 315
+        },
+        {
+            "size": 21744,
+            "nodeId": 3,
+            "ordinal": 309
+        },
+        {
+            "size": 24348,
+            "nodeId": 3,
+            "ordinal": 300
+        },
+        {
+            "size": 1113748,
+            "nodeId": 3,
+            "ordinal": 299
+        },
+        {
+            "size": 18552,
+            "nodeId": 3,
+            "ordinal": 297
+        },
+        {
+            "size": 29404,
+            "nodeId": 3,
+            "ordinal": 284
+        },
+        {
+            "size": 29404,
+            "nodeId": 3,
+            "ordinal": 283
+        },
+        {
+            "size": 21012,
+            "nodeId": 3,
+            "ordinal": 282
+        },
+        {
+            "size": 16992,
+            "nodeId": 3,
+            "ordinal": 323
+        },
+        {
+            "size": 17352,
+            "nodeId": 3,
+            "ordinal": 281
+        },
+        {
+            "size": 17088,
+            "nodeId": 3,
+            "ordinal": 272
+        },
+        {
+            "size": 23784,
+            "nodeId": 3,
+            "ordinal": 312
+        },
+        {
+            "size": 17568,
+            "nodeId": 3,
+            "ordinal": 270
+        },
+        {
+            "size": 17820,
+            "nodeId": 3,
+            "ordinal": 265
+        },
+        {
+            "size": 17820,
+            "nodeId": 3,
+            "ordinal": 264
+        },
+        {
+            "size": 46160,
+            "nodeId": 3,
+            "ordinal": 259
+        },
+        {
+            "size": 18624,
+            "nodeId": 3,
+            "ordinal": 258
+        },
+        {
+            "size": 161432,
+            "nodeId": 3,
+            "ordinal": 247
+        },
+        {
+            "size": 22784,
+            "nodeId": 3,
+            "ordinal": 242
+        },
+        {
+            "size": 24348,
+            "nodeId": 3,
+            "ordinal": 302
+        },
+        {
+            "size": 16392,
+            "nodeId": 2,
+            "ordinal": 239
+        },
+        {
+            "size": 22784,
+            "nodeId": 3,
+            "ordinal": 238
+        },
+        {
+            "size": 16400,
+            "nodeId": 2,
+            "ordinal": 254
+        },
+        {
+            "size": 22784,
+            "nodeId": 3,
+            "ordinal": 237
+        },
+        {
+            "size": 32416,
+            "nodeId": 3,
+            "ordinal": 233
+        },
+        {
+            "size": 32416,
+            "nodeId": 3,
+            "ordinal": 232
+        },
+        {
+            "size": 32416,
+            "nodeId": 3,
+            "ordinal": 231
+        },
+        {
+            "size": 18216,
+            "nodeId": 3,
+            "ordinal": 230
+        },
+        {
+            "size": 18568,
+            "nodeId": 3,
+            "ordinal": 334
+        },
+        {
+            "size": 18216,
+            "nodeId": 3,
+            "ordinal": 229
+        },
+        {
+            "size": 16432,
+            "nodeId": 52,
+            "ordinal": 224
+        },
+        {
+            "size": 1113748,
+            "nodeId": 3,
+            "ordinal": 301
+        },
+        {
+            "size": 46160,
+            "nodeId": 3,
+            "ordinal": 262
+        },
+        {
+            "size": 18808,
+            "nodeId": 3,
+            "ordinal": 139
+        },
+        {
+            "size": 28408,
+            "nodeId": 3,
+            "ordinal": 201
+        },
+        {
+            "size": 28664,
+            "nodeId": 3,
+            "ordinal": 322
+        },
+        {
+            "size": 16416,
+            "nodeId": 2,
+            "ordinal": 314
+        },
+        {
+            "size": 26872,
+            "nodeId": 3,
+            "ordinal": 186
+        },
+        {
+            "size": 16400,
+            "nodeId": 42,
+            "ordinal": 206
+        },
+        {
+            "size": 1113748,
+            "nodeId": 3,
+            "ordinal": 303
+        },
+        {
+            "size": 35904,
+            "nodeId": 3,
+            "ordinal": 198
+        },
+        {
+            "size": 18624,
+            "nodeId": 3,
+            "ordinal": 256
+        },
+        {
+            "size": 20640,
+            "nodeId": 3,
+            "ordinal": 134
+        },
+        {
+            "size": 28376,
+            "nodeId": 3,
+            "ordinal": 200
+        },
+        {
+            "size": 29572,
+            "nodeId": 3,
+            "ordinal": 257
+        },
+        {
+            "size": 35904,
+            "nodeId": 3,
+            "ordinal": 196
+        },
+        {
+            "size": 120800,
+            "nodeId": 3,
+            "ordinal": 195
+        },
+        {
+            "size": 120800,
+            "nodeId": 3,
+            "ordinal": 194
+        },
+        {
+            "size": 120800,
+            "nodeId": 3,
+            "ordinal": 193
+        },
+        {
+            "size": 17568,
+            "nodeId": 3,
+            "ordinal": 271
+        },
+        {
+            "size": 17200,
+            "nodeId": 3,
+            "ordinal": 105
+        },
+        {
+            "size": 16408,
+            "nodeId": 2,
+            "ordinal": 294
+        },
+        {
+            "size": 53188,
+            "nodeId": 3,
+            "ordinal": 192
+        },
+        {
+            "size": 35032,
+            "nodeId": 3,
+            "ordinal": 92
+        },
+        {
+            "size": 16400,
+            "nodeId": 45,
+            "ordinal": 209
+        },
+        {
+            "size": 26872,
+            "nodeId": 3,
+            "ordinal": 188
+        },
+        {
+            "size": 25712,
+            "nodeId": 3,
+            "ordinal": 253
+        },
+        {
+            "size": 26872,
+            "nodeId": 3,
+            "ordinal": 185
+        },
+        {
+            "size": 16400,
+            "nodeId": 40,
+            "ordinal": 176
+        },
+        {
+            "size": 16480,
+            "nodeId": 43,
+            "ordinal": 216
+        },
+        {
+            "size": 98852,
+            "nodeId": 3,
+            "ordinal": 184
+        },
+        {
+            "size": 98852,
+            "nodeId": 3,
+            "ordinal": 182
+        },
+        {
+            "size": 33424,
+            "nodeId": 3,
+            "ordinal": 181
+        },
+        {
+            "size": 29404,
+            "nodeId": 3,
+            "ordinal": 285
+        },
+        {
+            "size": 29304,
+            "nodeId": 3,
+            "ordinal": 179
+        },
+        {
+            "size": 16400,
+            "nodeId": 7,
+            "ordinal": 64
+        },
+        {
+            "size": 29304,
+            "nodeId": 3,
+            "ordinal": 178
+        },
+        {
+            "size": 29304,
+            "nodeId": 3,
+            "ordinal": 177
+        },
+        {
+            "size": 16408,
+            "nodeId": 34,
+            "ordinal": 173
+        },
+        {
+            "size": 16400,
+            "nodeId": 35,
+            "ordinal": 169
+        },
+        {
+            "size": 37416,
+            "nodeId": 3,
+            "ordinal": 167
+        },
+        {
+            "size": 16400,
+            "nodeId": 7,
+            "ordinal": 165
+        },
+        {
+            "size": 26688,
+            "nodeId": 3,
+            "ordinal": 162
+        },
+        {
+            "size": 26688,
+            "nodeId": 3,
+            "ordinal": 161
+        },
+        {
+            "size": 34800,
+            "nodeId": 3,
+            "ordinal": 159
+        },
+        {
+            "size": 53188,
+            "nodeId": 3,
+            "ordinal": 190
+        },
+        {
+            "size": 161432,
+            "nodeId": 3,
+            "ordinal": 246
+        },
+        {
+            "size": 32008,
+            "nodeId": 3,
+            "ordinal": 128
+        },
+        {
+            "size": 33252,
+            "nodeId": 3,
+            "ordinal": 152
+        },
+        {
+            "size": 22284,
+            "nodeId": 3,
+            "ordinal": 150
+        },
+        {
+            "size": 22284,
+            "nodeId": 3,
+            "ordinal": 149
+        },
+        {
+            "size": 16416,
+            "nodeId": 2,
+            "ordinal": 148
+        },
+        {
+            "size": 23776,
+            "nodeId": 3,
+            "ordinal": 147
+        },
+        {
+            "size": 20964,
+            "nodeId": 3,
+            "ordinal": 145
+        },
+        {
+            "size": 16632,
+            "nodeId": 3,
+            "ordinal": 141
+        },
+        {
+            "size": 101680,
+            "nodeId": 3,
+            "ordinal": 205
+        },
+        {
+            "size": 98852,
+            "nodeId": 3,
+            "ordinal": 180
+        },
+        {
+            "size": 17420,
+            "nodeId": 3,
+            "ordinal": 136
+        },
+        {
+            "size": 16480,
+            "nodeId": 3,
+            "ordinal": 133
+        },
+        {
+            "size": 46160,
+            "nodeId": 3,
+            "ordinal": 261
+        },
+        {
+            "size": 37836,
+            "nodeId": 3,
+            "ordinal": 117
+        },
+        {
+            "size": 20640,
+            "nodeId": 3,
+            "ordinal": 135
+        },
+        {
+            "size": 19040,
+            "nodeId": 3,
+            "ordinal": 132
+        },
+        {
+            "size": 16400,
+            "nodeId": 43,
+            "ordinal": 213
+        },
+        {
+            "size": 18204,
+            "nodeId": 3,
+            "ordinal": 137
+        },
+        {
+            "size": 32008,
+            "nodeId": 3,
+            "ordinal": 129
+        },
+        {
+            "size": 28376,
+            "nodeId": 3,
+            "ordinal": 199
+        },
+        {
+            "size": 26704,
+            "nodeId": 3,
+            "ordinal": 127
+        },
+        {
+            "size": 33424,
+            "nodeId": 3,
+            "ordinal": 183
+        },
+        {
+            "size": 30312,
+            "nodeId": 3,
+            "ordinal": 123
+        },
+        {
+            "size": 21744,
+            "nodeId": 3,
+            "ordinal": 310
+        },
+        {
+            "size": 31504,
+            "nodeId": 3,
+            "ordinal": 245
+        },
+        {
+            "size": 23700,
+            "nodeId": 3,
+            "ordinal": 119
+        },
+        {
+            "size": 25832,
+            "nodeId": 3,
+            "ordinal": 327
+        },
+        {
+            "size": 26704,
+            "nodeId": 3,
+            "ordinal": 126
+        },
+        {
+            "size": 17136,
+            "nodeId": 3,
+            "ordinal": 98
+        },
+        {
+            "size": 17888,
+            "nodeId": 3,
+            "ordinal": 116
+        },
+        {
+            "size": 37836,
+            "nodeId": 3,
+            "ordinal": 115
+        },
+        {
+            "size": 16408,
+            "nodeId": 24,
+            "ordinal": 113
+        },
+        {
+            "size": 21328,
+            "nodeId": 3,
+            "ordinal": 111
+        },
+        {
+            "size": 26688,
+            "nodeId": 3,
+            "ordinal": 163
+        },
+        {
+            "size": 19872,
+            "nodeId": 3,
+            "ordinal": 290
+        },
+        {
+            "size": 16408,
+            "nodeId": 7,
+            "ordinal": 106
+        },
+        {
+            "size": 17200,
+            "nodeId": 3,
+            "ordinal": 104
+        },
+        {
+            "size": 16632,
+            "nodeId": 3,
+            "ordinal": 140
+        },
+        {
+            "size": 17520,
+            "nodeId": 3,
+            "ordinal": 120
+        },
+        {
+            "size": 16848,
+            "nodeId": 3,
+            "ordinal": 101
+        },
+        {
+            "size": 17448,
+            "nodeId": 3,
+            "ordinal": 96
+        },
+        {
+            "size": 25832,
+            "nodeId": 3,
+            "ordinal": 326
+        },
+        {
+            "size": 53188,
+            "nodeId": 3,
+            "ordinal": 191
+        },
+        {
+            "size": 18552,
+            "nodeId": 3,
+            "ordinal": 298
+        },
+        {
+            "size": 16416,
+            "nodeId": 34,
+            "ordinal": 172
+        },
+        {
+            "size": 35032,
+            "nodeId": 3,
+            "ordinal": 89
+        },
+        {
+            "size": 35032,
+            "nodeId": 3,
+            "ordinal": 90
+        },
+        {
+            "size": 26704,
+            "nodeId": 3,
+            "ordinal": 125
+        },
+        {
+            "size": 16512,
+            "nodeId": 15,
+            "ordinal": 76
+        },
+        {
+            "size": 22572,
+            "nodeId": 3,
+            "ordinal": 72
+        },
+        {
+            "size": 16416,
+            "nodeId": 9,
+            "ordinal": 69
+        },
+        {
+            "size": 18592,
+            "nodeId": 3,
+            "ordinal": 329
+        },
+        {
+            "size": 161432,
+            "nodeId": 3,
+            "ordinal": 248
+        },
+        {
+            "size": 16472,
+            "nodeId": 7,
+            "ordinal": 99
+        },
+        {
+            "size": 16400,
+            "nodeId": 2,
+            "ordinal": 58
+        },
+        {
+            "size": 23784,
+            "nodeId": 3,
+            "ordinal": 313
+        },
+        {
+            "size": 21744,
+            "nodeId": 3,
+            "ordinal": 308
+        },
+        {
+            "size": 18000,
+            "nodeId": 3,
+            "ordinal": 56
+        }
+    ]
+}
